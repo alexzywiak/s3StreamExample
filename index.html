@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>S3 Audio</title>
+</head>
+<body>
+	<button onclick="playTunes()">Play</button>
+	<button onclick="stopTunes()">Stop</button>
+	<div>
+		<img id="spinner" style="display:none" src="ajax-loader.gif" alt="">
+	</div>
+      <audio controls src="http://d2oh9tgz5bro4i.cloudfront.net/apple.wav"></audio>
+	// <script>
+	// 	window.AudioContext = window.AudioContext || window.webkitAudioContext;
+ //    var context = new AudioContext();
+
+ //    var source;
+ //    var spinner = document.getElementById('spinner');
+
+ //    spinner.hide = function(){
+ //    	this.style.display = 'none';
+ //    };
+
+ //    spinner.show = function(){
+ //    	this.style.display = 'block';
+ //    }
+
+ //    function stopTunes(){
+ //    	if(source.stop){
+ //    		source.stop();
+ //    	}
+ //    }
+
+ //    function playTunes() {
+ //      var request = new XMLHttpRequest();
+ //      request.open("GET", "http://localhost:3000/audio/", true);
+ //      request.responseType = "arraybuffer";
+
+ //      spinner.show();
+
+ //      request.onload = function() {
+ //      	spinner.hide();
+ //        var Data = request.response;
+ //        process(Data);
+ //      };
+
+ //      request.send();
+ //    }
+
+ //    function process(Data) {
+ //      source = context.createBufferSource(); // Create Sound Source
+ //      context.decodeAudioData(Data, function(buffer) {
+ //        source.buffer = buffer;
+ //        source.connect(context.destination);
+ //        source.start(context.currentTime);
+ //      });
+ //    }
+	// </script>
+</body>
+</html>
